@@ -7,11 +7,7 @@ import pytest
 
 import main
 
-
-SECRET = os.environ.get('SECRET')
-TOKEN = os.environ.get('TOKEN')
-EMAIL = os.environ.get('EMAIL')
-PASSWORD = os.environ.get('PASSWORD')
+from settings import SECRET,TOKEN,EMAIL,PASSWORD
 
 @pytest.fixture
 def client():
@@ -29,6 +25,7 @@ def test_health(client):
     assert response.json == 'Healthy'
     
     
+    
 
 
 def test_auth(client):
@@ -41,3 +38,6 @@ def test_auth(client):
     assert response.status_code == 200
     token = response.json['token']
     assert token is not None
+
+
+    

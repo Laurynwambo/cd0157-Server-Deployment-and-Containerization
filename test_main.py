@@ -8,6 +8,10 @@ import pytest
 import main
 
 from settings import SECRET,TOKEN,EMAIL,PASSWORD
+SECRET = os.environ.get('SECRET')
+TOKEN = os.environ.get('TOKEN')
+EMAIL = os.environ.get('EMAIL')
+PASSWORD = os.environ.get('PASSWORD')
 
 @pytest.fixture
 def client():

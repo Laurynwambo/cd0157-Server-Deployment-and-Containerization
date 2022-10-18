@@ -4,10 +4,8 @@
         {
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::258461407878:root",
-                "UserId": "AIDATYLMADKDNKL4O2SLX",
-                "Account": "258461407878",
-                "Arn": "arn:aws:iam::258461407878:user/myAdmin"
+                "AWS": "arn:aws:iam::258461407878:root"
+                
             },
             "Action": "sts:AssumeRole"
         }

@@ -14,6 +14,9 @@ data:
       - system:masters
       rolearn: arn:aws:iam::258461407878:role/UdacityFlaskDeployCBKubectlRole
       username: build 
+      - system:masters
+      rolearn: arn:aws:iam::258461407878:role/UdacityFlaskDeployCBKubectlRole
+      username: build
 kind: ConfigMap
 metadata:
   creationTimestamp: "2022-05-11T11:16:26Z"

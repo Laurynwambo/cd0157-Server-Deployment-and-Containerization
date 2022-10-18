@@ -3,7 +3,7 @@
 .flaskenv
 *.pyc
 *.pyo
-
+.env
 dist/
 build/
 *.egg
